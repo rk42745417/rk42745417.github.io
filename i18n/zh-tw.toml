@@ -1,0 +1,21 @@
+[minute]
+one = "min"
+other = "mins"
+
+[copy]
+other = "Copy"
+
+[copied]
+other = "Copied"
+
+[copyrightAuthor]
+other = "Author"
+
+[copyrightLink]
+other = "Link"
+
+[copyrightLicense]
+other = "License"
+
+[qrcode]
+other = "「qr code」"

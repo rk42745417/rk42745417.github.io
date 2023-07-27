@@ -1,7 +1,6 @@
 ---
 title: "Hello World"
 date: 2023-07-27T21:46:28+08:00
-draft: true
 ---
 測試簡介
 

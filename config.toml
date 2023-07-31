@@ -2,7 +2,7 @@
 # 站點配置
 
 baseURL = "https://www.jikuai.dev/"
-title = "雞塊的競程隨筆"
+title = "雞塊的隨筆"
 languageCode = "zh-tw"
 hasCJKLanguage = true
 # 版權資訊（支援 Markdown）
@@ -343,12 +343,12 @@ uglyURLs = false
     # 說明：用於 JSON-LD、Open Graph
 
     # 站點的描述
-    siteDescription = "MemE 是一個強大且可高度定製的 GoHugo 部落格主題，專為個人部落格設計。"
+    siteDescription = "半退休的競程選手，喜歡研究與分享各種技術和人生。"
     # 說明：用於 HTML 的頭部元資料、JSON-LD、
     #      Open Graph、Atom、RSS
 
     # 站點的建立時間
-    siteCreatedTime = "1969-07-20T20:17:43+00:00"
+    siteCreatedTime = "2023-07-27T23:39:00+00:00"
     # 注意：請保持此格式，更改數字
 
     # 站點的推特帳號

@@ -974,10 +974,10 @@ uglyURLs = false
     # 頁尾
     fontFamilyFooter = ""
     # 主體
-    fontFamilyBody = "'EB Garamond', 'Noto Serif TC', serif"
+    fontFamilyBody = "'Noto Sans TC', 'EB Garamond', 'Noto Serif TC', serif"
 
     # 網路字型連結
-    fontsLink = "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Serif+SC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    fontsLink = "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Serif+TC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Noto+Sans+TC:wght@400;500;700"
     # 說明：要想讀者一定體驗到你設定的字型，最好
     #      採用網路字型。MemE 主題目前僅支援
     #      Google Fonts 的連結，請前往

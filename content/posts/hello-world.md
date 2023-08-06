@@ -41,6 +41,6 @@ And some inline code: `$ sudo pacman -S hugo`
 
 ## Conclusion
 總之看起來還不錯！除了一些問題以外：
-- [ ] 中文字體很醜
+- [x] 中文字體很醜
 - [ ] 在數學模式必須打 `\newline` 而不是 `\\`。
 - [ ] 換行必須乖用兩個空格（其實也不算是問題就是了）

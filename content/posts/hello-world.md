@@ -15,11 +15,11 @@ Hello Hugo!
 ## Tests
 ### Test header 2
 $$\int_0^2 x^2\,dx = ?$$
-The graph $G = (V, E)$ is a complete binary tree.  
-Newline  
+The graph $G = (V, E)$ is a complete binary tree.
+Newline
 Another newline
 
-New paragraph  
+New paragraph
 With yet another new line
 
 Hi
@@ -43,4 +43,4 @@ And some inline code: `$ sudo pacman -S hugo`
 總之看起來還不錯！除了一些問題以外：
 - [x] 中文字體很醜
 - [ ] 在數學模式必須打 `\newline` 而不是 `\\`。
-- [ ] 換行必須乖用兩個空格（其實也不算是問題就是了）
+- [x] 換行必須乖用兩個空格（其實也不算是問題就是了）

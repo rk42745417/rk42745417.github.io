@@ -2,11 +2,11 @@
 # 站點配置
 
 baseURL = "https://www.jikuai.dev/"
-title = "雞塊的隨筆"
+title = "雞塊的生活隨筆"
 languageCode = "zh-tw"
 hasCJKLanguage = true
 # 版權資訊（支援 Markdown）
-copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
+copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW)"
 
 # 主題選擇
 theme = "meme"
@@ -75,7 +75,7 @@ uglyURLs = false
             autoHeadingID = true
             autoHeadingIDType = "github"
         [markup.goldmark.renderer]
-            hardWraps = false
+            hardWraps = true
             unsafe = true
             xHTML = false
     [markup.highlight]
@@ -98,9 +98,9 @@ uglyURLs = false
     # 名字
     name = "Ji Kuai"
     # 郵箱
-    email = "rk427454171@gmail.com@gmail.com"
+    email = "rk427454171@gmail.com"
     # 座右銘或簡介
-    motto = "owowowo"
+    motto = "學習永無止境"
     # 頭像
     avatar = "/icons/apple-touch-icon.png"
     # 網站（預設值：baseURL）
@@ -352,7 +352,7 @@ uglyURLs = false
     # 注意：請保持此格式，更改數字
 
     # 站點的推特帳號
-    siteTwitter = "reuixiy"
+    siteTwitter = "rk42745417"
     # 說明：用於 Twitter Cards
 
 
@@ -1156,10 +1156,10 @@ uglyURLs = false
     shareOnFacebook = true
     shareOnLinkedIn = true
     shareOnTelegram = true
-    shareOnWeibo = true
-    shareOnDouban = true
-    shareOnQQ = true
-    shareOnQzone = true
+    shareOnWeibo = false
+    shareOnDouban = false
+    shareOnQQ = false
+    shareOnQzone = false
 
     shareViaQRCode = true
 

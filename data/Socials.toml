@@ -1,0 +1,34 @@
+[[socials]]
+    id = "rss"
+    url = "/rss.xml"
+    icon = "rss"
+    title = "RSS"
+    weight = 1
+
+[[socials]]
+    id = "email"
+    url = "mailto:rk427454171@gmail.com"
+    icon = "envelope"
+    title = "Email"
+    weight = 2
+
+[[socials]]
+    id = "github"
+    url = "https://github.com/rk42745417"
+    icon = "github"
+    title = "GitHub"
+    weight = 3
+
+[[socials]]
+    id = "twitter"
+    url = "https://twitter.com/rk42745417"
+    icon = "twitter"
+    title = "Twitter"
+    weight = 4
+
+[[socials]]
+    id = "telegram"
+    url = "https://t.me/rk42745417"
+    icon = "telegram"
+    title = "Telegram"
+    weight = 5

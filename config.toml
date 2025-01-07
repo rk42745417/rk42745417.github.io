@@ -3,10 +3,10 @@
 
 baseURL = "https://www.jikuai.dev/"
 title = "雞塊的生活隨筆"
-languageCode = "zh-tw"
+languageCode = "zh-TW"
 hasCJKLanguage = true
 # 版權資訊（支援 Markdown）
-copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW)"
+copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
 
 # 主題選擇
 theme = "meme"
@@ -17,6 +17,10 @@ newContentEditor = "nvim"
 # i18n
 defaultContentLanguage = "zh-tw"
 defaultContentLanguageInSubdir = false
+
+# 標題大小寫格式
+# https://gohugo.io/getting-started/configuration/#configure-title-case
+titleCaseStyle = "none"
 
 # 是否複數化列表頁面的標題
 pluralizeListTitles = false
@@ -36,9 +40,6 @@ enableGitInfo = false
 # 是否生成 robots.txt 檔案
 enableRobotsTXT = true
 
-# 每一分頁的文章數（僅對「文章摘要」首頁佈局有效）
-pagination.pagerSize = 10
-
 # URL 相關
 disablePathToLower = false
 relativeURLs = false
@@ -57,6 +58,12 @@ uglyURLs = false
 # 修改時間
 [frontmatter]
     lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
+
+[pagination]
+    disableAliases = false
+    # 每一分頁的文章數（僅對「文章摘要」首頁佈局有效）
+    pagerSize = 5
+    path = 'page'
 
 # Markdown 渲染器
 [markup]
@@ -92,21 +99,6 @@ uglyURLs = false
 # 壓縮 HTML
 [minify.tdewolff.html]
     keepWhitespace = false
-
-# 作者資訊
-[author]
-    # 名字
-    name = "Ji Kuai"
-    # 郵箱
-    email = "rk427454171@gmail.com"
-    # 座右銘或簡介
-    motto = "學習永無止境"
-    # 頭像
-    avatar = "/icons/apple-touch-icon.png"
-    # 網站（預設值：baseURL）
-    # website = "https://io-oi.me/"
-    # 推特
-    twitter = "rk42745417"
 
 # 相關文章
 [related]
@@ -220,16 +212,10 @@ uglyURLs = false
         pre = "internal"
         post = "user-circle"
     [[menu.main]]
-        url = "https://jikuaioldblog.jikuai.dev/"
-        name = "舊 blog"
         weight = 6
-        pre = "external"
-        post = "clock"
-    [[menu.main]]
-        weight = 7
         identifier = "theme-switcher"
     [[menu.main]]
-        weight = 8
+        weight = 7
         identifier = "lang-switcher"
     # [[menu.main]]
     #     weight = 8
@@ -689,6 +675,39 @@ uglyURLs = false
     gitalkEnableHotKey = true
     # 說明：https://github.com/gitalk/gitalk
 
+    ## Giscus
+    enableGiscus = true
+    giscusRepo = "rk42745417/blog-comment"
+    giscusRepoId = "R_kgDONnEVEw"
+    giscusCategory = "Announcements"
+    giscusCategoryId = "DIC_kwDONnEVE84Cl0Xw"
+    giscusMapping = "pathname"
+    giscusStrict = false
+    giscusReactionsEnabled = true
+    giscusEmitMetaData = false
+    giscusInputPosition = "top"
+    giscusTheme = "light"
+    giscusThemeDark = "dark"
+    giscusLang = "zh-TW"
+    # 說明：https://giscus.app/zh-TW
+
+    # Remark42
+    enableRemark42 = false
+    remark42Host = ""
+    remark42SiteId = "remark"
+    remark42Url = ""
+    remark42Components = ["embed"]
+    remark42MaxShownComments = 15
+    remark42MaxLastComments = 15
+    remark42Theme = "light"
+    remark42PageTitle = ""
+    remark42Locale = "zh-tw"
+    remark42ShowEmailSubscription = true
+    remark42ShowRssSubscription = true
+    remark42SimpleView = false
+    remark42NoFooter = false
+    # 說明：https://remark42.com/docs/configuration/frontend/
+
 
     ######################################
     # Google Analytics
@@ -723,6 +742,8 @@ uglyURLs = false
     ## 廣告單元
     enableGoogleAdUnits = false
     googleAdSlot = ""
+    googleAdSlotInArticle = ""
+    googleAdSlotAutoRelaxed = ""
 
 
     ######################################
@@ -848,7 +869,8 @@ uglyURLs = false
 
     # 是否連結文章的分節標題到目錄
     linkHeadingsToTOC = true
-    
+
+
     ######################################
     # 分節標題錨點
 
@@ -885,7 +907,7 @@ uglyURLs = false
     enableCaption = true
 
     # 說明文字的字首
-    captionPrefix = "◎ "
+    captionPrefix = "※ "
 
 
     ######################################
@@ -966,9 +988,9 @@ uglyURLs = false
     # 選單欄
     fontFamilyMenu = ""
     # 文章標題、文章副標題、列表標題、列表的年份和月份標題、相關文章標題、文章上下篇標題、表格的表頭、定義列表中的術語
-    fontFamilyTitle = "'Noto Sans TC', 'EB Garamond', serif"
+    fontFamilyTitle = "'Noto Sans TC', serif"
     # 分節標題、目錄標題
-    fontFamilyHeadings = "'Noto Sans TC', 'EB Garamond', serif"
+    fontFamilyHeadings = "'Noto Sans TC', serif"
     # 程式碼、上標、文章元資訊、文章更新徽章、文章的 Git 版本資訊、極簡頁尾、不蒜子站點瀏覽計數
     fontFamilyCode = "'Source Code Pro', 'Noto Serif TC', monospace"
     # 引用
@@ -980,10 +1002,10 @@ uglyURLs = false
     # 頁尾
     fontFamilyFooter = ""
     # 主體
-    fontFamilyBody = "'Noto Sans TC', 'EB Garamond', 'Noto Serif TC', serif"
+    fontFamilyBody = "'Noto Sans TC', serif"
 
     # 網路字型連結
-    fontsLink = "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Noto+Serif+TC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Noto+Sans+TC:wght@400;500;700"
+    fontsLink = "https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Noto+Sans+TC:wght@400;500;700"
     # 說明：要想讀者一定體驗到你設定的字型，最好
     #      採用網路字型。MemE 主題目前僅支援
     #      Google Fonts 的連結，請前往
@@ -993,7 +1015,7 @@ uglyURLs = false
     ######################################
     ## 字號（單位：px）
 
-    fontSize = 16
+    fontSize = 18
 
     ######################################
     ## 製表符的寬度
@@ -1158,16 +1180,13 @@ uglyURLs = false
 
     displayShareOnText = false
 
-    shareOnTwitter = true
-    shareOnFacebook = true
-    shareOnLinkedIn = true
-    shareOnTelegram = true
-    shareOnWeibo = false
-    shareOnDouban = false
-    shareOnQQ = false
-    shareOnQzone = false
+    postShareItems = ["facebook", "twitter", "linkedin", "telegram", "qrcode", "email"]
 
-    shareViaQRCode = true
+    # 從網路取得 Fediverse 實例清單用於輸入建議
+    fetchFediverseInstances = false
+    # 說明：當開啟 mastodon 或 fediverse 分享項
+    #      時建議開啟。開啟後建置時，資料需要從網
+    #      路下載，會帶來額外的建置時間。
 
 
     ######################################
@@ -1452,3 +1471,22 @@ uglyURLs = false
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"
         busuanzi = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         utterances = "https://utteranc.es/client.js"
+
+
+    ######################################
+    # 作者資訊
+    [params.author]
+        # 名字
+        name = "Ji Kuai"
+        # 郵箱
+        email = "rk427454171@gmail.com"
+        # 座右銘或簡介
+        motto = "學習永無止境"
+        # 頭像
+        avatar = "/icons/apple-touch-icon.png"
+        # 網站（預設值：baseURL）
+        # website = "https://io-oi.me/"
+        # 推特
+        twitter = "rk42745417"
+        # Fediverse
+        # fediverse = "@reuixiy@bird.makeup"

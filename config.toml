@@ -212,10 +212,16 @@ uglyURLs = false
         pre = "internal"
         post = "user-circle"
     [[menu.main]]
+        url = "https://jikuaioldblog.jikuai.dev/"
+        name = "Old blog"
         weight = 6
-        identifier = "theme-switcher"
+        pre = "external"
+        post = "clock"
     [[menu.main]]
         weight = 7
+        identifier = "theme-switcher"
+    [[menu.main]]
+        weight = 8
         identifier = "lang-switcher"
     # [[menu.main]]
     #     weight = 8
